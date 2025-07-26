@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #bb86fc;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 6px;
+    color: #ffffff;
+    transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #bb86fc;
+    box-shadow: 0 0 0 2px rgba(187, 134, 252, 0.3);
+}
+
+button {
+    background: linear-gradient(135deg, #9c27b0, #673ab7);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background: linear-gradient(135deg, #8e24aa, #5e35b1);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(187, 134, 252, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#status {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    background-color: rgba(187, 134, 252, 0.1);
+    color: #bb86fc;
+    text-shadow: 0 0 8px rgba(187, 134, 252, 0.4);
+    animation: glow 2s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 5px rgba(187, 134, 252, 0.5);
+    }
+    to {
+        box-shadow: 0 0 15px rgba(187, 134, 252, 0.8);
+    }
+}
+
+/* Дополнительные стили для элементов формы */
+::-webkit-input-placeholder {
+    color: #666;
+}
+
+:-moz-placeholder {
+    color: #666;
+}
+
+::-moz-placeholder {
+    color: #666;
+}
+
+:-ms-input-placeholder {
+    color: #666;
+}
+
+.g-recaptcha {
+    margin: 15px 0;
+    border-radius: 4px;
+    overflow: hidden;
+}
